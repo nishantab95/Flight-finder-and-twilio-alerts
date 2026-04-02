@@ -12,7 +12,7 @@ notification_manager = NotificationManager()
 
 ORIGIN_CITY_IATA = "LON"
 
-for row in sheet_data:
+for row in sheet_data: 
     if row["iataCode"] == "":
         row["iataCode"] = flight_search.get_destination_code(row["city"])
         time.sleep(2)
